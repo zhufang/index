@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylef.css"/>
+</head>
+<body>
+<!--
+顺序
+1)display float position（top left 值直接写在定位属性后面） 写在最上面 位置先关的
+2）width height
+3)padding margin
+4)文字相关的一些属性（color font 等等）
+5）border background
+6)其他 （overflow opacity transition ...）
+-->
+<div class="nav clearfix">
+    <!--导航部分  sub-nav 辅导航 header 头部  content container 主题部分  footer 最下面的部分-->
+   <h1><a href="javascript:;"></a></h1>
+
+   <ul class="navList clearfix">
+       <li class="on">
+           <a href="javascript:;">首页</a>
+       </li>
+       <li>
+           <a href="javascript:;">目的地</a>
+       </li>
+       <li>
+           <a href="javascript:;">旅游攻略</a>
+       </li>
+       <li class="bor free">
+           <a href="javascript:;">自由行商城<i></i></a>
+           <ol>
+               <li>机票+酒店<b>hot</b></li>
+               <li class="green">当地游<b>new</b></li>
+               <li>签证</li>
+               <li>国际租车</li>
+               <li>表现</li>
+           </ol>
+       </li>
+       <li>
+           <a href="javascript:;">商店</a>
+       </li>
+       <li class="bor community">
+           <a href="javascript:;">社区<i></i></a>
+           <div>
+               <ul>
+                   <li><a href="javascript:;">问答<b>hot</b></a></li>
+                   <li><a href="javascript:;">蚂蜂窝周边<b class="new">new</b></a></li>
+                   <li><a href="javascript:;">蜂蜜兑换</a></li>
+                   <li><a href="javascript:;">结伴</a></li>
+               </ul>
+<ol>
+    <li><a href="javascript:;">蚂蜂窝旅行家</a></li>
+    <li><a href="javascript:;">小组论坛</a></li>
+    <li><a href="javascript:;">分舵同城</a></li>
+    <li><a href="javascript:;">蚂蜂窝拍卖行</a></li>
+    <li><a href="javascript:;">蜂窝俱乐部</a></li>
+    <li><a href="javascript:;">照片PK</a></li>
+    <li><a href="javascript:;">真人兽</a></li>
+    <li><a href="javascript:;">道具商店</a></li>
+</ol>
+           </div>
+       </li>
+       <li>
+           <a href="javascript:;">APP</a>
+       </li>
+   </ul>
+<!--只要子级元素浮动 就去给父级元素直接加class为清浮动的类名就可以了 例如： clearfix 相当于一个公共的样式，用的时候给父级直接加类名就可以了-->
+<div class="navLogin">
+    <a href="javascript:;" class="weibo"></a><a href="javascript:;" class="qq"></a><a href="javascript:;" class="weChat"></a>
+   <span>
+        <a href="javascript:;" class="login">登录</a>
+        <a href="javascript:;">注册</a>
+  </span>
+
+</div>
+</div>
+<div class="banner">
+    <!--banner 轮播图-->
+    <ul class="bg">
+        <li class="on">
+            <div class="main">
+                <p><span>11</span>/Aug.2016<br/>带你一路向“南非”--春节南非12日行记</p>
+                <div class="search">
+                    <!--搜索框部分-->
+                    <div class="searchTop">
+                        <ul class="clearfix">
+                            <li class="first"><i></i>全部</li>
+                            <li><i></i>酒店</li>
+                            <li><i></i>目的地</li>
+                            <li><i></i>自由行商城</li>
+                        </ul>
+                       <div class="sear clearfix">
+                           <input type="text" placeholder="搜目的地/攻略/酒店/旅游特价 "/>
+                           <div class="btn">
+                               <input type="button"/>
+                               <b></b>
+
+                           </div>
+                       </div>
+                    </div>
+                    <p>
+                        图片来自于  <a href="javascript:;">宜兴</a>，此目的地共收藏了                <a href="javascript:;">13506</a>张宜兴图片。本片由<a href="javascript:;">羊小羴</a>荣誉出品！
+                    </p>
+                </div>
+<!--图片导航-->
+                <div class="navImg">
+                    <ul>
+                        <li class="listTop"><img src="1.jpeg" alt=""/></li>
+                        <li><img src="2.jpeg" alt=""/></li>
+                        <li><img src="3.jpeg" alt=""/></li>
+                        <li><img src="4.jpeg" alt=""/></li>
+                        <li class="noMar"><img src="5.jpeg" alt=""/></li>
+                    </ul>
+                    <i></i>
+                </div>
+
+       </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+<!--p标签里面不能套块级元素，但可以嵌套行内元素-->
+
+</div>
+
+
+<!--主要内容-->
+<div class="content clearfix">
+    <div class="conLeft">
+        <a href="javascript:;"><img src="dt.gif" alt=""></a>
+        <h4><a href="javascript:;">旅行家专栏</a>
+            <a href="javascript:;" class="column">专栏首页</a>
+        </h4>
+        <div class="conLTab">
+            <img src="q.jpg" alt=""/>
+            <ul class="clearfix">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+<div class="text">
+    <a href="javascript:;">沙尘暴前无尊严</a>
+    <p>紧跟其后，浮土和黄沙就漫溢过来，凶狠地填塞了我们刚才还在享用着的那个空间。</p>
+</div>
+        <h4><a href="javascript:;">旅行攻略推荐</a>
+            <a href="javascript:;" class="column">更多</a>
+        </h4>
+<div class="book clearfix">
+    <a href="javascript:;"><img src="q1.jpg" alt=""></a>
+    <p><a href="javascript:;">两栖旅行</a><br/><br/>两栖旅行详细的吃、住、行、景点、线路、实用信息</p>
+</div>
+        <ul class="comment">
+            <li> <a href="javascript:;">vivian</a> 点评了  神户的   <a href="javascript:;">六甲山(Mount</a></li>
+            <li><a href="javascript:;">马小洒</a> 点评了    <a href="javascript:;">布拉格的 圣维特大教堂</a></li>
+            <li><a href="javascript:;">身骑白马</a> 点评了  哥本哈根的 小美人鱼铜像</li>
+            <li><a href="javascript:;">Ann (安</a> 点评了  东京的 浅草文化观光</li>
+            <li> <a href="javascript:;">小爺半生</a>  点评了  三亚的 文昌糟粕醋海</li>
+        </ul>
+        <a href="javascript:;" class="go"><img src="q3.jpg" alt=""></a>
+        <h4><a href="javascript:;">我的活动</a>
+            <a href="javascript:;" class="column img">正在进行</a>
+        </h4>
+        <ul class="activity">
+            <li class="clearfix">
+                <img src="img/d1.png" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d2.png" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d3.png" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d4.jpeg" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d5.jpeg" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d6.png" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+            <li class="clearfix">
+                <img src="img/d7.png" alt=""/><p><a href="javascript:;">欢迎旅行，欢迎回家</a><br/>无论哪里，同一份中式礼遇。</p>
+            </li>
+        </ul>
+        <a href="javascript:;" class="car"><img src="img/ff1.jpeg" alt=""></a>
+        <!--href="#"点击就直接回到顶部-->
+        <h4><a href="javascript:;">加入蚂蜂窝</a>
+            <a href="javascript:;" class="column">更多职位&gt;</a>
+        </h4>
+        <a href="javascript:;" class="joinImg"><img src="img/hr.jpg" alt=""></a>
+        <ul class="job">
+            <li>
+                <a href="javascript:;" class="clearfix">广告销售经理<b></b><i>HOT</i><span>申请职位&gt;</span></a>
+            </li>
+            <li>
+                <a href="javascript:;" class="clearfix">广告销售经理<b></b><i>HOT</i><span>申请职位&gt;</span></a>
+            </li>
+        </ul>
+        <h4><a href="javascript:;">蚂蜂窝旅行网站最新进展</a>
+        </h4>
+        <ul class="date">
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+            <li>06月11日<a href="javascript:;">2016竞赛参加澳洲</a></li>
+        </ul>
+    </div>
+<div class="conRight clearfix">
+    <a href="javascript:;" class="adImg">
+        <img src="img/ss.jpeg" alt=""/>
+    </a>
+    <div class="freeTitle clearfix">
+        <h4><a href="javascript:;">一元自由行</a></h4>
+        <a href="javascript:;">巴厘岛<b>13%</b></a>
+    </div>
+    <div class="joinBox clearfix">
+        <div class="joinL">
+            <a href="javascript:;"><img src="img/wK.jpeg" alt=""/>
+            <!--遮罩层-->
+                <div>
+                   <i>6<em>8</em>3</i>
+                    <b>人已参加</b>
+                </div>
+
+
+            </a>
+
+        </div>
+        <div class="joinR clearfix">
+            <!--右上角-->
+            <i></i>
+            <h4><a href="javascript"><span>今日</span>香港飞巴厘岛5/6天双人半自助游</a></h4>
+            <p>(首次参与5元代金券)</p>
+            <div class="btn clearfix">
+                <a href="javascript:;" class="btnL"><i></i><span>目标：</span><b>￥</b><em>7999</em></a>
+                <a href="javascript:;" class="btnR">1元试试</a>
+            </div>
+            <div class="total clearfix">
+                <span>已支持 <i>￥1006</i></span>
+                <b>完成进度<i>13%</i></b>
+            </div>
+<div class="bar">
+    <span></span>
+</div>
+        </div>
+    </div>
+    <div class="hotNav clearfix">
+<h4><a href="javascript:;">热门游记</a>
+<span><i></i>筛选</span>
+</h4>
+        <a href="javascript:;" class="new">最新发表</a>
+        <a href="javascript:;" class="index">我要上首页</a>
+        <a href="javascript:;" class="write"><i></i>写游记</a>
+    </div>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r1.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r2.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r3.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r3.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r4.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r5.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r6.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r7.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r8.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r9.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r10.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li class="clearfix">
+            <a href="javascript:;"><img src="img/r11.jpeg" alt=""/></a>
+            <div>
+                <h3><a href="javascript:;">{ 清迈，回首又见你 }</a></h3>
+                <a href="javascript:;">         快一年没有写游记了，感觉脑子都有些生疏，面对着屏幕发呆许久，不知道该写下些什么文字留给这十天的记忆。 自己一直记忆力就不太好，所以才养成每次出门回来尽可能留下些文字和照片的习惯...</a>
+                <div class="bottom clearfix">
+                    <i></i><a href="javascript:;" class="add">俄罗斯</a><em>，by</em><img src="img/ww.jpeg" alt=""/>
+                    <a href="javascript:;" class="name">chi大人</a>
+                    <strong></strong><b>28239/388</b><span>1206<s></s></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="page">
+        <span>
+            共83页/992条
+        </span>
+        <i>1</i>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">5</a>
+        <a href="javascript:;">6</a>
+        <a href="javascript:;">7</a>
+        <a href="javascript:;">8</a>
+        <a href="javascript:;">9</a>
+        <a href="javascript:;" class="nextPage">下一页&gt;&gt;</a>
+    </div>
+</div>
+
+    </div>
+<ul class="toTop">
+   <li>
+       <i></i>
+       <a href="#" class="topText">返回顶部</a>
+   </li>
+    <li class="cen">
+        <b></b>
+        <a href="javascript:;">意见反馈</a>
+    </li>
+    <li class="code">
+        <s></s>
+        <a href="javascript:;" class="pic"><img src="img/qrcode-weixin.gif" alt=""/></a>
+    </li>
+</ul>
+
+
+</body>
+</html>
